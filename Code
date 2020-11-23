@@ -1,0 +1,44 @@
+#Text Based adventure Game
+
+def red_door():
+    print("Hi {name},You Entered in the Red Door--->")
+    print("Now choose a door carefully,Get your luck with u before opening any door-->")
+    
+    Door_red=input("Choose a Door:::Dragon or Dolphin:::")
+    if Door_red=='Dragon':
+        print("ooopsss !!! You encountered the Red_Dragon !! ")
+        print("You lose !!! Better luck next tym .....")
+    elif Door_red=='Dolphin':
+        print("Yaahoo !! The Dolphin is on its way to arrange help for u ..")
+        print("Take a leave..Your village will be safe...")
+        
+def blue_door():
+    print("Hi {name},You entered in the Blue Door--->")
+    print("Clear the levels ,open Doors and pass the level--->")
+    
+    Door_blue=input("Choose a Door ::: White or Green--->")
+    Door_blue.lower()
+    if Door_blue=='white':
+        blue_ans1=input("Enter the capital of India:::")
+        if blue_ans1=='Delhi':
+            print("You passed the level 2..")
+            print("you won !!!")
+        else:
+            print("Wrong answer !!!")
+            print("Better luck next time...")
+    elif Door_blue=='Green':
+        print("I can't write anymore..get lost")
+        
+
+def TBAG():
+    name=input("Enter your name-->")
+    print(f"Hi {name},The future of this world is in ur hand only !!! Complete the levels to save the world...")
+    print("Hint: Avoid Red Dragon")
+    
+    Door=input("Choose any one Door ::: Blue or Red")
+    
+    if Door=='Blue':
+        blue_door()
+    elif Door=='Red':
+        red_door()
+TBAG()
